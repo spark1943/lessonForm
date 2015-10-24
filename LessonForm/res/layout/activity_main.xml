@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res/com.consultinggroup.classtime"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+         <com.consultinggroup.tools.CircleImageView
+            android:id="@+id/face"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="left"
+            android:src="@drawable/face"
+            app:border_color="@color/light"
+            app:border_width="1dp"
+            android:layout_marginLeft="2dp"
+                android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectschool"
+            android:text="@string/title_lesson"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lessonplus"
+            android:src="@drawable/lessonplus"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+ <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CACACD" />
+ <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="fill_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp" >
+    </android.support.v4.view.ViewPager>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CACACD" />
+ <LinearLayout android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:orientation="horizontal"> 
+     <RelativeLayout android:layout_width="0dp"
+         android:layout_weight="1"
+         android:clickable="true"
+         android:id="@+id/lessonLayout"
+          android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_height="wrap_content">
+     <ImageView android:layout_width="wrap_content" 
+         android:id="@+id/lesson"  
+           android:background="@drawable/lesson_press"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"/>
+     <TextView android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/lesson"
+         android:textColor="@color/tab_press"
+         android:gravity="center"
+         android:clickable="true"
+             android:id="@+id/lessonText"
+         android:text="@string/title_lesson"/>
+         </RelativeLayout>
+         <RelativeLayout android:layout_width="0dp"
+         android:layout_weight="1"
+             android:id="@+id/societyLayout"
+          android:layout_gravity="center"
+           android:clickable="true"
+         android:gravity="center"
+         android:layout_height="wrap_content">
+     <ImageView android:layout_width="wrap_content"
+           android:id="@+id/society"
+             android:background="@drawable/society_normal"
+            android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         />
+       <TextView android:layout_width="wrap_content"
+           android:id="@+id/guangchangText"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/society"
+           android:clickable="true"
+             android:textColor="#CACACD"
+             android:layout_marginTop="2dp"
+            android:layout_alignBaseline="@id/lessonText"
+         android:text="@string/title_society"/>
+     </RelativeLayout>
+      <RelativeLayout android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_gravity="center"
+         android:gravity="center"
+          android:clickable="true"
+           android:id="@+id/personLayout"
+         android:layout_height="wrap_content">
+     <ImageView android:layout_width="wrap_content"
+           android:id="@+id/person"
+           android:background="@drawable/book_normal"
+         android:layout_height="wrap_content"
+        />
+      <TextView android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/person"
+          android:layout_alignBaseline="@id/guangchangText"
+          android:id="@+id/personText"
+            android:textColor="#CACACD"
+            android:clickable="true"
+         android:text="@string/title_file"/>
+        </RelativeLayout>
+ </LinearLayout>
+</LinearLayout>

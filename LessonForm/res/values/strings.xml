@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">课堂时间</string>
+    <string name="action_settings">设置</string>
+    <string name="login">开始体验</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="selectschool">选择学校</string>
+    <string name="selectinstitute">选择学院</string>
+    <string name="selectyear">选择时间</string>
+    <string name="resultData">学习信息</string>
+    <string name="nearschool">附近的学校</string>
+    <string name="schoolhint">请输入学校名称</string>
+    <string name="yearhint">请输入入学时间</string>
+    <string name="institutehint">请输入学院名称</string>
+    <string name="title_activity_institute">InstituteActivity</string>
+    <string name="title_activity_year">YearActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_schoo2l">Schoo2lActivity</string>
+    <string name="title_lesson">课表</string>
+    <string name="title_society">校园</string>
+    <string name="title_file">资料</string>
+    <string name="title_user">用户中心</string>
+
+    <string-array name="planets_array"></string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_lesson_data">LessonDataActivity</string>
+    <string name="title_activity_person">PersonActivity</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="album">相册</string>
+    <string name="finish">完成</string>
+    <string name="preview">预览</string>
+    <string name="title_activity_album">AlbumActivity</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_show_pic">ShowPicActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+
+    <string-array name="weekdays">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="time">
+        <item>08:00</item>
+        <item>08:50</item>
+        <item>09:50</item>
+        <item>10:40</item>
+        <item>11:30</item>
+        <item>14:05</item>
+        <item>14:55</item>
+        <item>15:45</item>
+        <item>16:40</item>
+        <item>17:30</item>
+        <item>18:30</item>
+        <item>19:20</item>
+        <item>20:10</item>
+    </string-array>
+
+    <string name="title_activity_discuss">DiscussActivity</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_write_ly">WriteLyActivity</string>
+    <string name="title_activity_answer">AnswerActivity</string>
+
+</resources>

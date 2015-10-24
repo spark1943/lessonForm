@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8" >
+        <ImageView android:layout_width="30dp"
+            android:id="@+id/back"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectschool"
+            android:text="载入课表"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CACACD" />
+    <RelativeLayout android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="登录"
+      />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginTop="80sp"
+        android:background="@drawable/corners_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/studentNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0sp"
+            android:hint="学号"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColorHint="#C8C8C8" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0sp"
+            android:hint="密码"
+             android:textSize="16sp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="#C8C8C8" >
+        </EditText>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+        <EditText
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0sp"
+             android:textSize="16sp"
+            android:hint="验证码"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#C8C8C8" >
+        </EditText>
+         <ImageView  android:layout_width="0dp"
+             android:id="@+id/codePic"
+            android:layout_weight="1.5"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="0dp"
+             />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_below="@id/confirm"
+        android:background="@drawable/corners_bg2"
+        android:text="载入"
+         android:textSize="16sp"
+        android:textColor="#fff" />
+
+        </RelativeLayout>
+</LinearLayout>

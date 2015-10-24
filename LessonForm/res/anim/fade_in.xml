@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <scale>
+         
+         android:interpolator="@android:anim/accelerate_decelerate_interpolator" 
+         android:fromxscale="0.001" 
+         android:toxscale="1.0" 
+         android:fromyscale="0.001" 
+         android:toyscale="1.0" 
+         android:pivotx="100%" 
+         android:pivoty="10%" 
+         android:duration="200"
+   </scale>
+

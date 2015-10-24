@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <item
+        android:id="@+id/addLesson"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="手动添课"/>
+    <item
+        android:id="@+id/score"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="查询分数"/>
+    <item
+        android:id="@+id/stop"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="退出登录"/>
+
+</menu>

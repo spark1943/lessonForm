@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/resultData"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectschool" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CACACD" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="6" >
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightblue"
+            android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+            android:text="请确认你的信息是否正确"/>
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightblue" />
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_weight="1"
+              android:id="@+id/schoollayout"
+            android:layout_height="0dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/school"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="学校"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/schoolText"
+            android:layout_centerInParent="true"
+             android:layout_alignBaseline="@id/school"
+            android:text="武汉大学"/>
+        
+          </RelativeLayout>
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CACACD" />
+           <RelativeLayout android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/institutelayout"
+            android:layout_height="0dp">
+        <TextView android:layout_width="fill_parent"
+            android:id="@+id/institute"
+            android:layout_height="wrap_content"
+       android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="学院"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@id/institute"
+             android:id="@+id/instituteText"
+            android:text="国际软件学院"/>
+          </RelativeLayout>
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CACACD" />
+           <RelativeLayout android:layout_width="fill_parent"
+            android:layout_weight="1"
+             android:id="@+id/yearlayout"
+            android:layout_height="0dp">
+        <TextView android:layout_width="fill_parent"
+            android:id="@+id/year"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="入学年份"/>
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/yearText"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@id/year"
+            android:text="2013"/>
+          </RelativeLayout>
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CACACD" />
+           <RelativeLayout android:layout_width="fill_parent"
+               android:id="@+id/xuelilayout"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        <TextView android:layout_width="fill_parent"
+            android:id="@+id/xueli"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="学历"/>
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@id/xueli"
+             android:id="@+id/xueliText"
+            android:text="本科"/>
+          </RelativeLayout>
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CACACD" />
+          <Button android:layout_width="fill_parent"
+              android:layout_weight="1"
+              android:layout_height="0dp"
+              android:id="@+id/confirm"
+              android:layout_margin="10dp"
+              android:text="确认"
+              android:textColor="@color/white"
+              android:textSize="17sp"
+              android:background="@drawable/corners_bg2"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" >
+    </RelativeLayout>
+
+</LinearLayout>

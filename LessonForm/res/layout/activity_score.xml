@@ -1,0 +1,54 @@
+<!-- 定义ScrollView，为里面的组件添加垂直滚动条 -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <ImageView android:layout_width="30dp"
+            android:id="@+id/back"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:id="@+id/scoreTime"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectschool"
+            android:text="所有的成绩"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CACACD" />
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="0dp"
+        android:layout_weight="10"  
+	>
+<!-- 定义HorizontalScrollView，为里面的组件添加水平滚动条 -->	
+<HorizontalScrollView
+        android:layout_marginRight="20dp"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+        <TableLayout   
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent"  
+        android:stretchColumns="0"  
+        android:layout_marginTop="10dp"
+        android:id="@+id/tableLayout" >          
+    </TableLayout>  
+</HorizontalScrollView>
+</ScrollView>
+        
+
+</LinearLayout>
